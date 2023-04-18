@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Learning Management System</title>
+    <link rel="stylesheet" type="text/css" href="dashboardStyle2.css">
+    <script src="https://kit.fontawesome.com/f4f129efac.js" crossorigin="anonymous"></script>
+    <script>
+
+        window.onload = function() {
+            showCategory("courses");
+        }
+
+        function showCategory(category) {
+            // Hide all category contents
+            var categoryContents = document.getElementsByClassName('category-content');
+            for (var i = 0; i < categoryContents.length; i++) {
+                categoryContents[i].style.display = 'none';
+            }
+
+            // Show the selected category content
+            document.getElementById(category + '-content').style.display = 'block';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h1>Learning Management System</h1>
+        <ul>
+            <li class="active" id="courses">
+                <i class="fas fa-book"></i>
+                <a href="#" onclick="showCategory('courses'); return false;">
+                    <span>Courses</span>
+                </a>
+            </li>
+            <li id="delivery">
+                <i class="fas fa-truck"></i>
+                <a href="#" onclick="showCategory('delivery'); return false;">
+                    <span>Delivery</span>
+                </a>
+            </li>
+            <li id="learners">
+                <i class="fas fa-users"></i>
+                <a href="#" onclick="showCategory('learners'); return false;">
+                    <span>Learners</span>
+                </a>
+            </li>
+            <li id="reporting">
+                <i class="fas fa-chart-bar"></i>
+                <a href="#" onclick="showCategory('reporting'); return false;">
+                    <span>Reporting</span>
+                </a>
+            </li>
+            <li id="enrollments">
+                <i class="fas fa-file-alt"></i>
+                <a href="#" onclick="showCategory('enrollments'); return false;">
+                    <span>Current Enrollments</span>
+                </a>
+            </li>
+            <li id="catalog">
+                <i class="fas fa-th-list"></i>
+                <a href="#" onclick="showCategory('catalog'); return false;">
+                    <span>Course Catalog</span>
+                </a>
+            </li>
+            <li id="admin">
+                <i class="fas fa-cog"></i>
+                <a href="#" onclick="showCategory('admin'); return false;">
+                    <span>Admin Options</span>
+                </a>
+            </li>
+            <li id="settings">
+                <i class="fas fa-cog"></i>
+                <a href="#" onclick="showCategory('settings'); return false;">
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li id="logout">
+                <i class="fas fa-sign-out-alt"></i>
+                <a href="#" onclick="showCategory('logout'); return false;">
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h2>Welcome to the Learning Management System</h2>
+        <p>Please select a category from the sidebar to view its content.</p>
+
+        <!-- Placeholder content for each category -->
+        <div class="category-content" id="courses-content">
+            <h3>Courses</h3>
+            <p>Course content</p>
+        </div>
+
+        <div class="category-content" id="delivery-content">
+            <h3>Delivery</h3>
+            <p>delivery to users</p>
+        </div>
+
+        <div class="category-content" id="learners-content">
+            <h3>Learners</h3>
+            <p>Users, students, etc</p>
+        </div>
+
+        <div class="category-content" id="reporting-content">
+            <h3>Reporting</h3>
+            <p>Show analytics, completion, confidence, etc</p>
+        </div>
+
+        <div class="category-content" id="enrollments-content">
+            <h3>Enrollments</h3>
+            <p>All students enrolled, courses, etc</p>
+        </div>
+
+        <div class="category-content" id="catalog-content">
+            <h3>Catalog</h3>
+            <p>Catalog of courses, etc</p>
+        </div>
+
+        <div class="category-content" id="admin-content">
+            <h3>Admin</h3>
+            <p>Admin options, super user, etc</p>
+        </div>
+
+        <div class="category-content" id="settings-content">
+            <h3>Settings</h3>
+            <p>This is the</p>
+        </div>
+
+        <div class="category-content" id="logout-content">
+            <h3>Logout</h3>
+            <p>Logout</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
