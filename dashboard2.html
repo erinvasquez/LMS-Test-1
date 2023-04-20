@@ -93,21 +93,53 @@
         <div class="category-content" id="courses-content">
             <h3>Courses</h3>
             <p>Course content</p>
+            <p> Includes a counter for number of courses, a button to create a new course, then in
+            a list of categories: All, Drafts, Published, Archived, Templates, and Archived Templates. Included
+            on a screen of empty courses is a specific button to create your first course with some text. 
+            The text explains what this area of the dashboard this is, and how you can use other features like drafts
+            and publishing courses, archived courses, and templates.</p>
+            <p>Upon pressing a button to create a new course, a group of steps to make a complete course appears,
+            with the first step shown, comprising of a form. The first form is the course's details
+            including the Course's name, the primary language, the author, a description, an activation
+            (introductory) message up to 500 characters, and a cover image max 1280x1139 px. The service can be stopped
+            by texting STOP, and help can be received by responding with SUPPORT.</p>
+            <p>The next step comprises of creating the individual lessons for this course. A list of empty lessons is
+            loaded that can be filled by the user. Each lesson is made of an image preview 1280x1139 px, its Name, and
+            a body of text. Follow up questions can be added, either free response or multiple choice.
+            From there on the user can save the changes to the lesson, or continue on to delivery
+            and distribution configuration options.</p>
         </div>
 
         <div class="category-content" id="delivery-content">
             <h3>Delivery</h3>
             <p>delivery to users</p>
+
+            <p>Distribution settings for how to organize sending content to users subscribed to a course.
+                Included in the form for a course is the distribution name, the course name to distribute,
+                the selected delivery methods (sms, whatsapp, email), preferred delivery method, preferred country,
+                course cadence (scheduled, triggered by X, etc), scheduling (which days, times, whether to deliver
+            anytime or deliver at a specific time in your timezone, and if to keep sending whether or not
+            responses from user are detected).</p>
+            <p>These disttributions are shown as a list with categories for its name, date created, cohorts,
+            enrollment options, edit, and delete. Learners can enroll using a link, or QR code</p>
+
         </div>
 
         <div class="category-content" id="learners-content">
             <h3>Learners</h3>
             <p>Users, students, etc</p>
+            <p>Go to a list of all your students, grouped by the course theyre subscribed to.
+            We should be able to see different courses' students, and be able to edit, delete, reset or 
+            change their progress, and other general management.</p>
         </div>
 
         <div class="category-content" id="reporting-content">
             <h3>Reporting</h3>
             <p>Show analytics, completion, confidence, etc</p>
+            <p>Record every time a user completes or answers certain questions and finishes
+            certain courses, and compare that data to other users also enrolled in that course.
+            Track the amount of courses a user might be subscribed to, the number of correct answers,
+            incorrect answers, saved answers, or answers skipped total.</p>
         </div>
 
         <div class="category-content" id="enrollments-content">
@@ -117,17 +149,20 @@
 
         <div class="category-content" id="catalog-content">
             <h3>Catalog</h3>
-            <p>Catalog of courses, etc</p>
+            <p>Catalog of courses, etc. Show a list of the courses we've created.
+            Allows us to edit specifically courses.</p>
         </div>
 
         <div class="category-content" id="admin-content">
             <h3>Admin</h3>
-            <p>Admin options, super user, etc</p>
+            <p>Admin options, super user, etc. Probably similar to settings content, but only
+            available to admins.</p>
         </div>
 
         <div class="category-content" id="settings-content">
             <h3>Settings</h3>
-            <p>This is the</p>
+            <p>This leads to the settings menu. From here access account settings like login info,
+            profile image, notification settings, management for enrolled courses, etc.</p>
         </div>
 
         <div class="category-content" id="logout-content">
